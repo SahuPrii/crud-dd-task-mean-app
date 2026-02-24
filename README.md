@@ -1,27 +1,101 @@
-In this DevOps task, build and deploy a full-stack CRUD application using the MEAN stack (MongoDB, Express, Angular 15, and Node.js). The backend will be developed with Node.js and Express to provide REST APIs, connecting to a MongoDB database. The frontend will be an Angular application utilizing HTTPClient for communication.  
+# 🚀 CRUD DD Task - MEAN Stack DevOps Deployment
 
-The application will manage a collection of tutorials, where each tutorial includes an ID, title, description, and published status. Users will be able to create, retrieve, update, and delete tutorials. Additionally, a search box will allow users to find tutorials by title.
+## 📌 Project Overview
 
-## Project setup
+This project is a full-stack CRUD application built using the MEAN stack:
 
-### Node.js Server
+- MongoDB
+- Express.js
+- Angular
+- Node.js
 
-cd backend
+The application allows users to:
+- Create tutorials
+- Retrieve tutorials
+- Update tutorials
+- Delete tutorials
+- Search tutorials by title
 
-npm install
+---
 
-You can update the MongoDB credentials by modifying the `db.config.js` file located in `app/config/`.
+## 🐳 Dockerization
 
-Run `node server.js`
+The entire application is containerized using Docker.
 
-### Angular Client
+Services:
+- Frontend (Angular)
+- Backend (Node + Express API)
+- MongoDB
 
-cd frontend
+Docker Compose is used to manage multi-container setup.
 
-npm install
+To run locally:
 
-Run `ng serve --port 8081`
+```bash
+docker-compose up --build
+```
 
-You can modify the `src/app/services/tutorial.service.ts` file to adjust how the frontend interacts with the backend.
+---
 
-Navigate to `http://localhost:8081/`
+## ☁️ Deployment
+
+The application is deployed on a cloud VM.
+
+Steps performed:
+- Installed Docker & Docker Compose
+- Pulled Docker images from Docker Hub
+- Deployed containers using docker-compose
+- Exposed application on port 80
+
+Application is accessible via public VM IP.
+
+---
+
+## 🔁 CI/CD Pipeline
+
+A GitHub Actions workflow file is included in:
+
+.github/workflows/ci-cd.yml
+
+The pipeline is configured to:
+- Trigger on push to main branch
+- Build frontend Docker image
+- Build backend Docker image
+
+---
+
+## 🐙 Docker Hub Images
+
+Docker images pushed to Docker Hub:
+
+- priyanshu2611/frontend
+- priyanshu2611/backend
+
+---
+
+## 📂 Project Structure
+
+```
+backend/
+frontend/
+docker-compose.yml
+.github/workflows/
+```
+
+---
+
+## ✅ DevOps Tasks Completed
+
+- Application containerization
+- Multi-container setup with Docker Compose
+- Cloud VM deployment
+- Docker Hub integration
+- CI/CD workflow configuration
+- GitHub repository management
+
+---
+
+## 👨‍💻 Author
+
+Priyanshu Sahu  
+GitHub: https://github.com/SahuPrii
