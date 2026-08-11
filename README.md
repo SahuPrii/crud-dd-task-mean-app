@@ -94,7 +94,23 @@ docker-compose.yml
 - GitHub repository management
 
 ---
+## 🚀 How to Run the Project
 
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Docker
+- Docker Compose
+- Git
+
+### Run with Docker Compose
+
+Clone the repository:
+
+```bash
+git clone https://github.com/SahuPrii/crud-dd-task-mean-app.git
+cd crud-dd-task-mean-app
 ## 👨‍💻 Author
 
 Priyanshu Sahu  
